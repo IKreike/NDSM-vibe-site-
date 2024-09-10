@@ -1,0 +1,8 @@
+body{
+    background-color: aqua;
+}
+
+video {
+    width: max-content;
+    /* deze updaten met de juiste verhoudingen zodra we de goede videos hebben */
+}
