@@ -5,6 +5,8 @@ sourceVideo = document.querySelector("#SourceVideo");
 
 addEventListener ('click', openDoor);
 
+fullscreen();
+
 function openDoor(){
     removeEventListener ('click', openDoor);
     console.log("door opened");
@@ -28,4 +30,10 @@ function waiting(){
     addEventListener ('click', openDoor);
     sourceVideo.src = "./assets/loopV1/Loop.mp4";
     video.load();
+}
+
+function fullscreen(){
+    if (video.requestFullscreen) {
+        video.requestFullscreen();
+}
 }
