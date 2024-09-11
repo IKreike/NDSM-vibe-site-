@@ -1,8 +1,12 @@
 body{
-    background-color: aqua;
+    background-color: black;
 }
 
 video {
-    width: max-content;
+    display: block;
+    max-width: 90vw;
+    max-height:100vh;
+    left: 100;
+    rotate: -90deg;
     /* deze updaten met de juiste verhoudingen zodra we de goede videos hebben */
 }
