@@ -1,12 +1,18 @@
 body{
     background-color: black;
+    display: flex;
+    flex-direction: row;
 }
 
 video {
-    display: block;
-    max-width: 90vw;
-    max-height:100vh;
-    left: 100;
-    rotate: -90deg;
+    /* display:block; */
+    /* position: absolute; */
+    max-width: 100vh;
+    /* max-height:100vw; */
+    /* left: -100%; */
+    /* top: 2em; */
+    rotate: 90deg;
+    transform: translateX(-40%);
+    /* border: yellowgreen, 2em, double; */
     /* deze updaten met de juiste verhoudingen zodra we de goede videos hebben */
 }
