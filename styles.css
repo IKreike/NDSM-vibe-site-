@@ -13,6 +13,7 @@ video {
     /* top: 2em; */
     rotate: 90deg;
     transform: translateX(-40%);
+    /* transform: translateY(-20%); */
     /* border: yellowgreen, 2em, double; */
     /* deze updaten met de juiste verhoudingen zodra we de goede videos hebben */
 }
