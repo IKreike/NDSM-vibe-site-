@@ -1,5 +1,7 @@
 console.log("hello world")
 
+var elem = document.documentElement; 
+
 video = document.querySelector("#video");
 sourceVideo = document.querySelector("#SourceVideo");
 
@@ -32,11 +34,11 @@ function waiting() {
 }
 
 function fullscreen() {
-    if (video.requestFullscreen) {
-        video.requestFullscreen();
-    } else if (video.webkitRequestFullscreen) { /* Safari */
-        video.webkitRequestFullscreen();
-    } else if (video.msRequestFullscreen) { /* IE11 */
-        video.msRequestFullscreen();
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
     }
 }
