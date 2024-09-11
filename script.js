@@ -5,16 +5,15 @@ sourceVideo = document.querySelector("#SourceVideo");
 
 addEventListener ('click', openDoor);
 
-fullscreen();
-
 function openDoor(){
+    fullscreen();
     removeEventListener ('click', openDoor);
     console.log("door opened");
     console.log(sourceVideo.src);
     sourceVideo.src = "./assets/loopV1/Part 2.mp4";
     console.log(sourceVideo.src);
     video.load();
-    setTimeout(introduction, 25000)
+    setTimeout(introduction, 25000);
 }
 
 function introduction (){
