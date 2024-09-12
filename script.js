@@ -8,7 +8,7 @@ sourceVideo = document.querySelector("#SourceVideo");
 addEventListener('click', openDoor);
 
 function openDoor() {
-    // fullscreen();
+    fullscreen();
     removeEventListener('click', openDoor);
     console.log("door opened");
     console.log(sourceVideo.src);
