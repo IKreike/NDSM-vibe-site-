@@ -5,7 +5,7 @@ var elem = document.documentElement;
 video = document.querySelector("#video");
 sourceVideo = document.querySelector("#SourceVideo");
 
-addEventListener('click', openDoor);
+video.addEventListener('click', openDoor);
 
 function openDoor() {
     fullscreen();
