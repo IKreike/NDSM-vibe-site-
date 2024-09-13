@@ -9,12 +9,13 @@ video.addEventListener('click', openDoor);
 
 function openDoor() {
     fullscreen();
-    removeEventListener('click', openDoor);
+    video.removeEventListener('click', openDoor);
     console.log("door opened");
     console.log(sourceVideo.src);
     sourceVideo.src = "assets/Part_2.mp4";
     console.log(sourceVideo.src);
     video.load();
+    video.play();
     setTimeout(introduction, 31000);
 }
 
@@ -24,13 +25,15 @@ function introduction() {
     sourceVideo.src = "assets/Part_1.mp4";
     console.log(sourceVideo.src);
     video.load();
+    video.play();
     setTimeout(waiting, 9000)
 }
 
 function waiting() {
-    addEventListener('click', openDoor);
+    video.addEventListener('click', openDoor);
     sourceVideo.src = "assets/Loop.mp4";
     video.load();
+    video.play();
 }
 
 function fullscreen() {
