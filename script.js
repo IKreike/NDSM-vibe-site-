@@ -8,7 +8,7 @@ sourceVideo = document.querySelector("#SourceVideo");
 video.addEventListener('click', openDoor);
 
 function openDoor() {
-    // fullscreen(); 
+    fullscreen(); 
     video.removeEventListener('click', openDoor);
     console.log("door opened");
     console.log(sourceVideo.src);
@@ -36,12 +36,12 @@ function waiting() {
     video.play();
 }
 
-// function fullscreen() {
-//     if (elem.requestFullscreen) {
-//         elem.requestFullscreen();
-//     } else if (elem.webkitRequestFullscreen) { /* Safari */
-//         elem.webkitRequestFullscreen();
-//     } else if (elem.msRequestFullscreen) { /* IE11 */
-//         elem.msRequestFullscreen();
-//     }
-// }
+function fullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+        elem.msRequestFullscreen();
+    }
+}
